@@ -4,7 +4,7 @@
 
 	<groupId>com.cloudcode.hadoop</groupId>
 	<artifactId>Cloudcode-Hadoop</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>Cloudcode-Hadoop</name>
@@ -25,7 +25,7 @@
 		<dependency>
 			<groupId>com.cloudcode</groupId>
 			<artifactId>Cloudcode-Framework</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.1</version>
 		</dependency>
 		<!-- hadoop -->
 		<dependency>
@@ -68,4 +68,16 @@
 			<version>${hbase.version}</version>
 		</dependency>
 	</dependencies>
+	<distributionManagement>
+		<!-- <snapshotRepository>
+			<id>lawyee-maven</id>
+			<name>Lawyee Maven Repository</name>
+			<url>http://127.0.0.1:8081/nexus/content/repositories/snapshots</url>
+		</snapshotRepository> -->
+		<repository>
+			<id>lawyee-maven</id>
+			<name>Lawyee Maven Repository</name>
+			<url>http://127.0.0.1:8081/nexus/content/repositories/releases/</url>
+		</repository>
+	</distributionManagement>
 </project>
